@@ -95,11 +95,10 @@ class Net(object):
 
             for neuronNum in range( 0, topology[layerNum] + 1 ):
                 self.layers[-1].append( Neuron( numOutputs, neuronNum ) )
-                print( 'Neural Created' )
+                print( 'Neuron Created !' )
 
             self.layers[-1][-1].setOutputval( 1.0 )
             
-        print (self.layers)
 
     def getRecentAverageError(self) :
         return self.recentAverageError
